@@ -92,3 +92,44 @@ In style used CamelCase.
 **justifyContent**
 
 **textAlign**
+
+6. [Height and Width](https://facebook.github.io/react-native/docs/height-and-width)
+
+Fixed Dimensions (pixels):
+
+```
+ <View>
+  <View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+  <View style={{width: 100, height: 100, backgroundColor: 'skyblue'}} />
+  <View style={{width: 150, height: 150, backgroundColor: 'steelblue'}} />
+ </View>
+```
+
+Flex Dimensions:
+```
+ <View style={{flex: 1}}>
+  <View style={{flex: 1, backgroundColor: 'powderblue'}} />
+  <View style={{flex: 2, backgroundColor: 'skyblue'}} />
+  <View style={{flex: 3, backgroundColor: 'steelblue'}} />
+ </View>
+```
+- parent - flex 1 - all screen
+- child - 1/6 2/6 3/6
+
+[React Native Styling Cheat Sheet](https://github.com/vhpoet/react-native-styling-cheat-sheet)
+
+7. [Layout with Flexbox](https://facebook.github.io/react-native/docs/flexbox)
+
+Flexbox :
+* flex-container - parent container
+* flex-element - child block
+
+alignItems:'center' - horizontal alignment in middle (in row direction)
+alignItems:'flex-start' - left
+alignItems:'flex-end' - right
+
+justifyContent:'center' - vertical alignment in middle
+justifyContent:'flex-start' - top
+justifyContent:'flex-end' - bottom
+
+
