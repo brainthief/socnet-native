@@ -42,7 +42,9 @@ Root component off App must be registered in **AppRegistry.registerComponent**, 
 
 ---------------------
 ["Enable Live Reload" in ADV android ](https://facebook.github.io/react-native/docs/debugging)
+
 Ctrl+M
+
 ---------------------
 
 3. Compare HTML and React Native tags
