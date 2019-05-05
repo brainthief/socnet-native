@@ -11,23 +11,20 @@ import { StyleSheet, Text, View } from 'react-native';
 import Header from './components/Header/Header'
 
 const App = () => {
-  console.log('App start')
+
   return (
     <View style={{ flex: 1 }}>
       <View style={styles.top}>
         <Header style={styles.topText} />
       </View>
-      <View style={{
-        flexDirection: 'row',
-        height: 30
-      }}>
+      <View style={{ flexDirection: 'row', height: 30 }}>
         <View style={{ flex: 1, backgroundColor: 'powderblue' }}></View>
         <View style={{ flex: 1, backgroundColor: 'skyblue' }}></View>
         <View style={{ flex: 1, backgroundColor: 'powderblue' }}></View>
       </View>
       <View style={styles.container}>
         <Text> Welcome to React Native! </Text>
-        <Text >To get started, edit App.js df</Text>
+        <Text >To get started, edit App.js</Text>
       </View>
     </View >
   );
@@ -39,12 +36,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'steelblue',
     paddingTop: 20,
     paddingBottom: 5,
-    alignItems: 'center',
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.2,
-    elevation: 2,
-    position: 'relative'
+    alignItems: 'center'
   },
   topText: {
     color: '#f0f8ff',
