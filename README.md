@@ -308,6 +308,5 @@ componentDidMount = async() => {
   } catch (e) {
     throw e
   }
-  
 }
 ```
