@@ -249,3 +249,65 @@ Change state:
 ```
 this.setState({title: 'text'})
 ```
+
+12. State vs props
+
+**State** - object, that created when was mounted component
+
+**Props** - object, that come from parent component. Cant change props, but can change child component props.
+
+## Common
+
+* Just standard JS object.
+
+* Can be changed.
+
+* Is input data for component.
+
+## Differences
+
+* State - inside component
+
+* Props - came from outside (parent) component
+
+13. fetch
+
+[fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+
+```
+const url = 'http://www......'
+componentDidMount = async() => {
+  const response = await  fetch(url)
+}
+```
+
+converting to json
+
+```
+const url = 'http://www......'
+componentDidMount = async() => {
+  const response = await  fetch(url)
+  const data = await response.json()
+  this.setState({ data })
+}
+```
+
+14. try ... catch
+ 
+[Try...catch mzl](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
+
+catch do job, only when get error
+
+```
+const url = 'http://www......'
+componentDidMount = async() => {
+  try {
+    const response = await  fetch(url)
+    const data = await response.json()
+    this.setState({ data })
+  } catch (e) {
+    throw e
+  }
+  
+}
+```
