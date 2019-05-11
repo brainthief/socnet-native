@@ -310,3 +310,50 @@ componentDidMount = async() => {
   }
 }
 ```
+
+15. Dimensions
+
+* Work with screen dimensions
+
+[DOCUMENTATION](https://facebook.github.io/react-native/docs/dimensions.html)
+
+Example:
+```
+var {height, width} = Dimensions.get('window');
+```
+
+Example
+```
+...
+import {Dimensions} from 'react-native'
+...
+const win = Dimensions.get('window')
+export const h = win.height
+export const w = win.width
+```
+Results in pixels
+
+```
+...
+import {h, w} from  './constants'
+...
+console.log('h, w', h, w)
+...
+const styles = StyleSheet.create({
+  hi: {
+    ...
+    width: w / 2.4
+  }
+})
+```
+
+16. Image:
+
+[DOCUMENTATION](https://facebook.github.io/react-native/docs/image)
+
+* attribute source for img url
+
+```
+<Image styles={cover} source={{uri}} />
+```
+
