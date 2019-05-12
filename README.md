@@ -135,7 +135,7 @@ Flex Dimensions:
 
 **justifyContent:'flex-start'** - top
 
-**justifyCosntent:'flex-end'** - bottom
+**justifyContent:'flex-end'** - bottom
 
 **justifyContent:'space-between'** - to corner and middle
 
@@ -181,16 +181,16 @@ position: 'relative'
 ![LVC](https://github.com/brainthief/socnet-native/blob/master/forgit/livecycles.jpg)
 
 ## Mount:
-* [1] constructor()
-* [2] static getDerivedStateFromProps()
-* [3] render()
-* [4] componentDidMount()
+* [1] **constructor()**. Frequently used for creating local state with object this.state and bind for methods. If need state and bind methods - you don't need constructor.
+* [2] **static getDerivedStateFromProps()**. Runs before render() in mount and update component. Must return new sate or null. Not often using. 
+* [3] **render()**. Is necessary in class component. Check **this.props** and **this.state**. Return one of: react-element, array or fragment, portal, sting and number, boolean or null.
+* [4] **componentDidMount()**. Runs immediately after component mounted. Initialization for DOM must be there. Ideal for data from server. 
 
 ## Update
 
 * static getDerivedStateFromProps()
-* shouldComponentUpdate(
-* render(0)
+* **shouldComponentUpdate()**. Runs after render was finished. 
+* render()
 * getSnapshotBeforeUpdate()
 * componentDidUpdate()
 
