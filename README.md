@@ -360,3 +360,4 @@ const styles = StyleSheet.create({
 # Creating APK
 
 [How to create APK](https://facebook.github.io/react-native/docs/signed-apk-android.html#adding-signing-config-to-your-app-s-gradle-config)
+[Android studio ADB](https://developer.android.com/studio/command-line/adb#Enabling)
