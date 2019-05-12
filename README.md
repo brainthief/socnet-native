@@ -357,3 +357,6 @@ const styles = StyleSheet.create({
 <Image styles={cover} source={{uri}} />
 ```
 
+# Creating APK
+
+[How to create APK](https://facebook.github.io/react-native/docs/signed-apk-android.html#adding-signing-config-to-your-app-s-gradle-config)
