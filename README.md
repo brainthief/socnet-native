@@ -49,6 +49,8 @@ Ctrl+M
 
 3. Compare HTML and React Native tags
 
+* View is container for others components - [DOCUMENTATION](https://facebook.github.io/react-native/docs/view.html)
+
 ```
 <div> - <View>
 <p> - <Text>
@@ -186,6 +188,13 @@ position: 'relative'
 * [3] **render()**. Is necessary in class component. Check **this.props** and **this.state**. Return one of: react-element, array or fragment, portal, sting and number, boolean or null.
 * [4] **componentDidMount()**. Runs immediately after component mounted. Initialization for DOM must be there. Ideal for data from server. 
 
+In constructor super must be first
+```
+constructor(props){
+  super(props);
+}
+```
+
 ## Update
 
 * static getDerivedStateFromProps()
@@ -252,9 +261,9 @@ this.setState({title: 'text'})
 
 12. State vs props
 
-**State** - object, that created when was mounted component
+**State** - object, that created when was mounted component - [DOCUMENTATION](https://facebook.github.io/react-native/docs/state)
 
-**Props** - object, that come from parent component. Cant change props, but can change child component props.
+**Props** - object, that come from parent component. Cant change props, but can change child component props. - [DOCUMENTATION](https://facebook.github.io/react-native/docs/props)
 
 ## Common
 
@@ -355,6 +364,68 @@ const styles = StyleSheet.create({
 
 ```
 <Image styles={cover} source={{uri}} />
+```
+
+17. TouchableOpacity
+
+[DOCUMENTATION](https://facebook.github.io/react-native/docs/touchableopacity)
+
+A wrapper for making views respond properly to touches. On press down, the opacity of the wrapped view is decreased, dimming it. 
+
+```
+import { ..., TouchableOpacity, ... } from 'react-native'
+
+class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { count: 0 }
+  }
+
+  onPress = () => {
+    this.setState({
+      count: this.state.count+1
+    })
+  }
+
+ render() {
+   return (
+     <View style={styles.container}>
+       <TouchableOpacity
+         style={styles.button}
+         onPress={this.onPress}
+       >
+         <Text> Touch Here </Text>
+       </TouchableOpacity>
+       <View style={[styles.countContainer]}>
+         <Text style={[styles.countText]}>
+            { this.state.count !== 0 ? this.state.count: null}
+          </Text>
+        </View>
+      </View>
+    )
+  }
+}
+```
+
+
+
+# Remote JS Debugging
+
+ctrl + m -> Start remote JS Debugging
+
+# Toggle Inspector
+
+ctrl + m -> Toggle Inspector
+
+# React Developer Tools
+Install:
+```
+npm install -g react-devtools
+```
+
+Run:
+```
+react-devtools
 ```
 
 # Creating APK
