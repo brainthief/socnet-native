@@ -9,6 +9,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
 import Header from './components/Header/Header'
+import NavBar from './components/NavBar/NavBar'
 import { combineReducers, createStore } from 'redux'
 import { Provider } from 'react-redux'
 import profilePageReducer from './redux/profilePageReducer'
@@ -25,17 +26,8 @@ const App = () => {
  return (
   <Provider store={store}>
    <View style={{ flex: 1 }}>
-    <View style={styles.top}>
-     <Header style={styles.topText} />
-    </View>
-    <View style={{
-     flexDirection: 'row',
-     height: 30
-    }}>
-     <View style={{ flex: 1, backgroundColor: 'powderblue' }}></View>
-     <View style={{ flex: 1, backgroundColor: 'skyblue' }}></View>
-     <View style={{ flex: 1, backgroundColor: 'powderblue' }}></View>
-    </View>
+    <Header />
+    <NavBar />
     <View style={styles.container}>
      <View>
       <Text style={{ fontSize: 25 }}><Profile /></Text>
@@ -85,21 +77,8 @@ const App = () => {
 }
 
 const styles = StyleSheet.create({
- top: {
-  backgroundColor: 'steelblue',
-  paddingTop: 20,
-  paddingBottom: 5,
-  alignItems: 'center',
-  shadowColor: '#000',
-  shadowOffset: { width: 0, height: 2 },
-  shadowOpacity: 0.2,
-  elevation: 2,
-  position: 'relative'
- },
- topText: {
-  color: '#f0f8ff',
-  fontSize: 20
- },
+
+
  container: {
   alignItems: 'center',
   backgroundColor: '#F5FCFF',

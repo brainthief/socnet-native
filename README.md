@@ -66,34 +66,41 @@ Ctrl+M
 
 5. Styles
 
-In React Native isn't CSS (no cascade).
-
-Use styles:
-```
-<View style={styles.container}>Text</View>
-```
-
-Create styles:
+* in React Native isn't CSS (no cascade).
+* need import StyleSheet from react-native.
+* need create object with **StyleSheet.create({})** method.
 
 ```
 const styles = StyleSheet.create({
  container: {
  },
  welcome: {
-
  }
 })
+```
+* to use styles need use style component attribute. 
+
+```
+<View style={styles.container}>Text</View>
 ```
 
 In style used CamelCase.
 
-**backgroundColor**
+**backgroundColor**: '#544510' - color for background
 
-**fontSize**
+**fontSize** - font size
 
 **justifyContent**
 
-**textAlign**
+**textAlign** - text align left / right
+
+**color** - text color
+
+**paddingTop** - padding from top
+
+**paddingBottom**
+
+**paddingRight**
 
 6. [Height and Width](https://facebook.github.io/react-native/docs/height-and-width)
 
