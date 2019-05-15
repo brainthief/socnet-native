@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, StyleSheet } from 'react-native'
+import { View, Text } from 'react-native'
 
 const NavBar = () => {
 
@@ -7,9 +7,33 @@ const NavBar = () => {
   flexDirection: 'row',
   height: 30
  }}>
-  <View style={{ flex: 1, backgroundColor: 'powderblue' }}></View>
-  <View style={{ flex: 1, backgroundColor: 'skyblue' }}></View>
-  <View style={{ flex: 1, backgroundColor: 'powderblue' }}></View>
+  <View style={{
+   flex: 1,
+   backgroundColor: 'powderblue',
+   flexDirection: 'column',
+   justifyContent: 'center',
+   alignItems: 'center'
+  }}>
+   <Text>Profile</Text>
+  </View>
+  <View style={{
+   flex: 1,
+   backgroundColor: 'skyblue',
+   flexDirection: 'column',
+   justifyContent: 'center',
+   alignItems: 'center'
+  }}>
+   <Text>Dialogs</Text>
+  </View>
+  <View style={{
+   flex: 1,
+   backgroundColor: 'powderblue',
+   flexDirection: 'column',
+   justifyContent: 'center',
+   alignItems: 'center'
+  }}>
+   <Text>Chat</Text>
+  </View>
  </View>
 }
 

@@ -439,3 +439,6 @@ react-devtools
 
 [How to create APK](https://facebook.github.io/react-native/docs/signed-apk-android.html#adding-signing-config-to-your-app-s-gradle-config)
 [Android studio ADB](https://developer.android.com/studio/command-line/adb#Enabling)
+
+
+!! react redux watch only where is connected. Render after change data only connected component
