@@ -441,4 +441,4 @@ react-devtools
 [Android studio ADB](https://developer.android.com/studio/command-line/adb#Enabling)
 
 
-!! react redux watch only where is connected. Render after change data only connected component
+!! react redux watch only where is connected. Render after change data only in connected component
